@@ -1,0 +1,24 @@
+body {
+    font-family: sans-serif;
+}
+#horizontalContainer {
+    width: fit-content;
+}
+#icons {
+    float: right;
+    padding-left: 16px;
+}
+#icons IMG {
+    background-color: black;
+    object-fit: contain;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+#colors {
+    padding-top: 16px;
+}
+#colors CANVAS {
+    cursor: pointer;
+}
