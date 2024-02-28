@@ -11,16 +11,23 @@ window.onload = function () {
     </script>
 </head>
 <body>
-    <div id="main">
-        <form action='#' onsubmit="return false;">
-            <input type="file" id="imagefile" onchange="refreshUI();" />
-            <input type="text" id="label" value="#Available" oninput="refreshUI();" />
-        </form>
-        <canvas id="canvas" style="position: absolute;opacity: 0;"></canvas>
-        <div id="horizontalContainer">
-            <img id="canvasImage" />
-            <div id="icons"></div>
+    <div id="mainWrap">
+        <div id="main">
+            <form action='#' onsubmit="return false;">
+                <input type="file" id="imagefile" onchange="refreshUI();" />
+                <input type="text" id="label" value="#Available" oninput="refreshUI();" />
+            </form>
+            <canvas id="canvas" style="position: absolute;opacity: 0;"></canvas>
+            <div id="horizontalContainer">
+                <img id="canvasImage" />
+                <div id="icons"></div>
+            </div>
+            <div id="colors"></div>
         </div>
-        <div id="colors"></div>
     </div>
+    <footer>
+        <small>
+            &copy; 2024 Eran Boudjnah | <a href="https://github.com/EranBoudjnah/LinkedInBanner">Source</a> | <a href="https://paypal.me/EranB" target="_blank">Like it? Buy me a beer 🙂</a>
+        </small>
+    </footer>
 </body>

@@ -1,6 +1,23 @@
+html, body {
+    height: 100%;
+    padding: 0px;
+}
 body {
     font-family: sans-serif;
     background-color: #EEEEEE;
+}
+a {
+    color: rgb(24, 80, 137);
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(34, 100, 157);
+}
+#mainWrap {
+    min-height: -webkit-calc(100% - 2em - 16px);
+    min-height: -moz-calc(100% - 2em - 16px);
+    min-height: calc(100% - 2em - 16px);
 }
 #main {
     margin: auto;
@@ -30,4 +47,9 @@ body {
 }
 #colors CANVAS {
     cursor: pointer;
+}
+FOOTER {
+    text-align: center;
+    padding: 8px;
+    color: #000;
 }
