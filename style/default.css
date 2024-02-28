@@ -1,5 +1,14 @@
 body {
     font-family: sans-serif;
+    background-color: #EEEEEE;
+}
+#main {
+    margin: auto;
+    width: fit-content;
+    background-color: white;
+    border: 2px solid #DDDDDD;
+    padding: 10px;
+    border-radius: 4px;
 }
 #horizontalContainer {
     width: fit-content;
