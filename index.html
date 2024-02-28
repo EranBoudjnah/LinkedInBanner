@@ -1,25 +1,26 @@
 <html>
 <head>
-<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-<title>LinkedInBanner</title>
-<link href="style/default.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="script/linkedinbanner.js"></script>
-<script type='text/javascript'>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <title>LinkedInBanner</title>
+    <link href="style/default.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="script/linkedinbanner.js"></script>
+    <script type='text/javascript'>
 window.onload = function () {
     refreshUI();
 }
-</script>
-
+    </script>
 </head>
 <body>
-    <form action='#' onsubmit="return false;">
-        <input type="file" id="imagefile" onchange="refreshUI();" />
-        <input type="text" id="label" value="#Available" oninput="refreshUI();" />
-    </form>
-    <canvas id="canvas" style="position: absolute;opacity: 0;"></canvas>
-    <div id="horizontalContainer">
-        <img id="canvasImage" />
-        <div id="icons"></div>
+    <div id="main">
+        <form action='#' onsubmit="return false;">
+            <input type="file" id="imagefile" onchange="refreshUI();" />
+            <input type="text" id="label" value="#Available" oninput="refreshUI();" />
+        </form>
+        <canvas id="canvas" style="position: absolute;opacity: 0;"></canvas>
+        <div id="horizontalContainer">
+            <img id="canvasImage" />
+            <div id="icons"></div>
+        </div>
+        <div id="colors"></div>
     </div>
-    <div id="colors"></div>
 </body>
