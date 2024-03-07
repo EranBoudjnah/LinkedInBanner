@@ -37,6 +37,7 @@ function refreshUI() {
         fileReader = new FileReader();
         fileReader.onload = function() { createImage(fileReader.result, labelField.value) };
         fileReader.readAsDataURL(file);
+        initializeDownloadButton();
     } else {
         initializeColors();
         initializeIcons();
@@ -113,6 +114,21 @@ function refreshUI() {
                 refreshUI();
             };
         });
+    }
+
+    function initializeDownloadButton() {
+        const downloadButton = document.getElementById('downloadButton');
+        downloadButton.style.display = 'block';
+        downloadButton.onclick = function() {
+            const uri = document.getElementById('canvasImage').src.replace(/^data:image\/[^;]+/, 'data:application/octet-stream');
+            const link = document.createElement('a');
+            link.setAttribute("download", 'avatar.png');
+            link.setAttribute('href', uri);
+            link.style = 'display: none';
+            document.body.appendChild(link);
+            link.click();
+            body.removeChild(body.lastChild);
+        };
     }
 
     function createImage(imageSrc, label) {

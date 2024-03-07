@@ -19,7 +19,35 @@ a:hover {
     min-height: -moz-calc(100% - 2em - 16px);
     min-height: calc(100% - 2em - 16px);
 }
+#canvasImage {
+    background-color: red;
+}
+#downloadButton {
+    position: absolute;
+    display: none;
+    right: 90px; 
+    top: 390px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(245, 245, 245, 0.5);
+    border: 2px solid black;
+    border-radius: 40px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    user-select: none;
+}
+#downloadButton:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+#downloadButton:active {
+    background-color: white;
+}
 #main {
+    position: relative;
     margin: auto;
     width: fit-content;
     background-color: white;
